@@ -5,21 +5,21 @@
 class NatsDiscover < Formula
   desc "CLI tool to discover NATS services using the nats-service framework"
   homepage "https://github.com/transactrx/nats-service"
-  version "1.4.38"
+  version "1.4.39"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/transactrx/nats-service/releases/download/v1.4.38/nats-discover_1.4.38_darwin_amd64.tar.gz"
-      sha256 "f9fd0fba327a42357edd37c8c0398981aef2c0c6edd4ca4591a0b7e377b30a92"
+      url "https://github.com/transactrx/nats-service/releases/download/v1.4.39/nats-discover_1.4.39_darwin_amd64.tar.gz"
+      sha256 "2135fda8f666b015d072c3612cb38cf2ee44d835a8ae4a2568986e567fcffb03"
 
       def install
         bin.install "nats-discover"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/transactrx/nats-service/releases/download/v1.4.38/nats-discover_1.4.38_darwin_arm64.tar.gz"
-      sha256 "ac4aff192793265032256059c152d76c687484447d93949a191d72b428c60224"
+      url "https://github.com/transactrx/nats-service/releases/download/v1.4.39/nats-discover_1.4.39_darwin_arm64.tar.gz"
+      sha256 "d4bc23b683a31c0fff24ddb41a2cbf7d24304bdb5640e0d99f49b9c37ccadb74"
 
       def install
         bin.install "nats-discover"
@@ -29,15 +29,15 @@ class NatsDiscover < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/transactrx/nats-service/releases/download/v1.4.38/nats-discover_1.4.38_linux_amd64.tar.gz"
-      sha256 "0f7a57fcae556dc60121fe7cc03a8d5771367ea1a24d8826efe1fb1001a4e234"
+      url "https://github.com/transactrx/nats-service/releases/download/v1.4.39/nats-discover_1.4.39_linux_amd64.tar.gz"
+      sha256 "a8fbd50abdaa36ded1c8b5970c70c0d2acc3f6527117b3c971416e3ea51453c8"
       def install
         bin.install "nats-discover"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/transactrx/nats-service/releases/download/v1.4.38/nats-discover_1.4.38_linux_arm64.tar.gz"
-      sha256 "dddb77e0d526184eb6ff6eedb14ca66c7ef1e4b0420076d7782f5fc86ca4415d"
+      url "https://github.com/transactrx/nats-service/releases/download/v1.4.39/nats-discover_1.4.39_linux_arm64.tar.gz"
+      sha256 "f099f9f91c27e560d0738faf4256415c4cd24e800adcb09e0e72d3d5c402e30b"
       def install
         bin.install "nats-discover"
       end
