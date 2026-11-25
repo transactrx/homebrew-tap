@@ -5,21 +5,21 @@
 class NatsAgents < Formula
   desc "CLI to discover and drive NATS Agent Protocol agents and network tools"
   homepage "https://github.com/transactrx/nats-agent"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/transactrx/nats-agent/releases/download/v0.8.0/nats-agents_0.8.0_darwin_amd64.tar.gz"
-      sha256 "4d0fa68c4cef461b76906c075f54422818a37a109048471ba5f08986cff9cc7a"
+      url "https://github.com/transactrx/nats-agent/releases/download/v0.9.0/nats-agents_0.9.0_darwin_amd64.tar.gz"
+      sha256 "cf00e9d5c2770bae485e841a7d10d4e63f61793f73de0edd842fda20378d4cec"
 
       define_method(:install) do
         bin.install "nats-agents"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/transactrx/nats-agent/releases/download/v0.8.0/nats-agents_0.8.0_darwin_arm64.tar.gz"
-      sha256 "07e25aeba011f2c2829ee90538331a12abb692bdd8054d93dd21529d4c19fd42"
+      url "https://github.com/transactrx/nats-agent/releases/download/v0.9.0/nats-agents_0.9.0_darwin_arm64.tar.gz"
+      sha256 "f054644af45d70219a359ed8cbb3c6c427b954e15a14ce6a1c07ca3f695c3ef0"
 
       define_method(:install) do
         bin.install "nats-agents"
@@ -29,15 +29,15 @@ class NatsAgents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/transactrx/nats-agent/releases/download/v0.8.0/nats-agents_0.8.0_linux_amd64.tar.gz"
-      sha256 "55ac2c0dc3d17953bb36d10f6f3f150bdbb6ffe0acf6f101fc8577cae071f8cf"
+      url "https://github.com/transactrx/nats-agent/releases/download/v0.9.0/nats-agents_0.9.0_linux_amd64.tar.gz"
+      sha256 "b2c17cc3b69cfb05e12ba303e44753aa349a69881ad2156ac49162ac85b2beb1"
       define_method(:install) do
         bin.install "nats-agents"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/transactrx/nats-agent/releases/download/v0.8.0/nats-agents_0.8.0_linux_arm64.tar.gz"
-      sha256 "09a8709e1f454e1030b3ea62941238166f4413f3b05c07035f07f733230a756c"
+      url "https://github.com/transactrx/nats-agent/releases/download/v0.9.0/nats-agents_0.9.0_linux_arm64.tar.gz"
+      sha256 "308c6056929700718a15648bec85f33533726e4a7a8aef34210ee075e59750c7"
       define_method(:install) do
         bin.install "nats-agents"
       end
